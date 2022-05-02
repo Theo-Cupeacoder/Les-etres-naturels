@@ -100,8 +100,47 @@
                         dans notre nouvel éco-village d'Etretat.
                     </p>
                     <div class="d-flex justify-content-center my-2">
-                        <a href="#" class="btn btn-success">Aider Guy</a>
+                    
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#helpModal" data-bs-whatever="@getbootstrap">Aider Guy</button>
+
+                        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-perso border border-white text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="helpModalLabel">Aider Guy</h5>
+                                        <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="get">
+                                            <div class="mb-3">
+                                                <label for="help-select" class="mb-1">Comment souhaitez-vous l'aider ?</label>
+                                                <select class="form-select" id="help-select"  
+                                                name="select-zone" multiple size="3" 
+                                                aria-label="size 3 multiple select example">
+                                                    <option selected>Message de soutien</option>
+                                                    <option value="1">Don matériel (ex: du bois)</option>
+                                                    <option value="2">Don immatériel (ex: du temps)</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="mb-1">Votre adresse e-mail :</label>
+                                                <input type="email" id="email" name="email" class="rounded">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message :</label>
+                                                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-success">Envoyer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
 

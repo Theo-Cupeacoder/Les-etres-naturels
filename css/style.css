@@ -1,9 +1,15 @@
+/** insérer les fonts google **/
+
 .bg-perso {
     background: url(/ressources/background/alejandro-cartagena-tQ14VN9aLPA-unsplash.jpg);
     
     background-position: fixed;
     background-size: 100rem;
     height: max-content;
+}
+
+.list-perso {
+    list-style: url(/ressources/svg/arrow-right-short.svg);
 }
 
 .hovered {
