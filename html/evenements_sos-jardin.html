@@ -65,13 +65,13 @@
                 <div class="col-12 bg-perso rounded m-2">
                     <h2 class="d-flex justify-content-center text-white p-2">SOS Jardin</h2>
                     <div class="d-flex justify-content-center ">
-                        <div class="rounded-circle bg-white p-1" style="width:160px;">
-                            <!-- Régler format de l'image -->
-                            <img src="/ressources/evenements/repentand-seekchristjesus-y0I85D5QKvs-unsplash.jpg" class="img-fluid shadow-lg rounded-circle" style="width:150px; height:auto;" alt="">
+                        <div class="rounded-circle bg-white p-1">
+                            <img src="/ressources/evenements/repentand-seekchristjesus-y0I85D5QKvs-unsplash-mod.jpg" class="img-fluid shadow-lg rounded-circle" style="width:150px; height:auto;" alt="">
                         </div>
                     </div>
                     <p class="text-center bg-white bg-opacity-75 rounded m-2 p-2">
-                        Isabelle Durand est venue s'installer à <strong>Châteaudun</strong> il y a plus de 20 ans. 
+                        Isabelle Durand est venue s'installer à <strong>Châteaudun</strong> il y a 
+                        plus de 20 ans. 
                         Elle y venait, avant de s'y installer, 
                         y passer les vacances avec son mari Daniel.
                         Tout deux sont tombés amoureux, non pas l'un de l'autre, 
@@ -84,7 +84,8 @@
                         défenseurs de l'environnement et très impliqués dans la lutte contre 
                         les inégalités sociales, 
                         Isabelle et Daniel ont décidé de mettre à profit leur exédant de terres 
-                        pour créer un <strong>jardin bio en permaculture</strong> afin de nourrir les plus démunis.
+                        pour créer un <strong>jardin bio en permaculture</strong> afin de nourrir 
+                        les plus démunis.
                     </p>
                     <p class="text-center bg-white bg-opacity-75 rounded m-2 p-2">
                         Il y a peu de temps, Isabelle à perdu son bien aimé. 
@@ -98,7 +99,45 @@
                         <strong>ce Dimanche</strong>, d'un peu d'aide pour <strong>la récolte des légumes</strong>.
                     </p>
                     <div class="d-flex justify-content-center my-2">
-                        <a href="#" class="btn btn-success">Aider Isabelle</a>
+                    
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#helpModal">Aider Isabelle</button>
+
+                        <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="helpModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content bg-perso border border-white text-white">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="helpModalLabel">Aider Isabelle</h5>
+                                        <button type="button" class="btn-close bg-white rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form method="get">
+                                            <div class="mb-3">
+                                                <label for="help-select" class="mb-1">Comment souhaitez-vous l'aider ?</label>
+                                                <select class="form-select" id="help-select"  
+                                                name="select-zone" multiple size="3" 
+                                                aria-label="size 3 multiple select example">
+                                                    <option selected>Message de soutien</option>
+                                                    <option value="1">Don matériel (ex: du bois)</option>
+                                                    <option value="2">Don immatériel (ex: du temps)</option>
+                                                  </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="mb-1">Votre adresse e-mail :</label>
+                                                <input type="email" id="email" name="email" class="rounded">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Message :</label>
+                                                <textarea class="form-control" id="message-text" name="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        <button type="button" class="btn btn-success">Envoyer</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
