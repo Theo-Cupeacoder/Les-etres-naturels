@@ -29,4 +29,58 @@
     transform: rotate(360deg);
 }
 
+.map-responsive {
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+    
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
 /** Insérer les médias queries **/
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    body, .btn {
+        font-size: 18px;
+    }
+    .logo {
+        font-size: 1.5em;
+    }
+    .carousel {
+        width: 80%;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    body, .btn {
+        font-size: 19px;
+    }
+    .logo {
+        font-size: 1.6em;
+    }
+    .carousel {
+        width: 80%;
+        max-width: 1000px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    body, .btn {
+        font-size: 20px;
+    }
+    .logo {
+        font-size: 1.7em;
+    }
+    .carousel {
+        width: 80%;
+        max-width: 1000px;
+    }
+}
