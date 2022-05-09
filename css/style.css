@@ -34,6 +34,7 @@
     padding-bottom:56.25%;
     position:relative;
     height:0;
+    max-height: 600px;
 }
     
 .map-responsive iframe {
@@ -46,6 +47,7 @@
 
 /** Insérer les médias queries **/
 
+/** md **/ 
 @media screen and (min-width:768px) and (max-width:991px) {
     body, .btn {
         font-size: 18px;
@@ -53,12 +55,18 @@
     .logo {
         font-size: 1.5em;
     }
-    .carousel {
+    .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
     }
+    
+    .video-responsive {
+        width: 50vw;
+        height: 25vh;
+    }
 }
 
+/** lg **/
 @media screen and (min-width:992px) and (max-width:1199px){
     body, .btn {
         font-size: 19px;
@@ -66,12 +74,17 @@
     .logo {
         font-size: 1.6em;
     }
-    .carousel {
+    .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
     }
+    .video-responsive {
+        width: 100vw;
+        height: 30vh;
+    }
 }
 
+/** xl **/
 @media screen and (min-width:1200px) {
     body, .btn {
         font-size: 20px;
@@ -79,8 +92,12 @@
     .logo {
         font-size: 1.7em;
     }
-    .carousel {
+    .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
+    }
+    .video-responsive {
+        width: 100vw;
+        height: 35vh;
     }
 }
