@@ -52,9 +52,13 @@
     body, .btn {
         font-size: 18px;
     }
+    .btn-sm {
+        font-size: 16px;
+    }
     .logo {
         font-size: 1.5em;
     }
+    
     .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
@@ -70,6 +74,9 @@
 @media screen and (min-width:992px) and (max-width:1199px){
     body, .btn {
         font-size: 19px;
+    }
+    .btn-sm {
+        font-size: 17px;
     }
     .logo {
         font-size: 1.6em;
@@ -88,6 +95,9 @@
 @media screen and (min-width:1200px) {
     body, .btn {
         font-size: 20px;
+    }
+    .btn-sm {
+        font-size: 18px;
     }
     .logo {
         font-size: 1.7em;
