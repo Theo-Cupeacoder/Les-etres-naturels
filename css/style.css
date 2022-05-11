@@ -1,8 +1,11 @@
 /** insérer les fonts google **/
 
+* {
+    box-sizing: border-box;
+}
+
 .bg-perso {
     background: url(/ressources/background/alejandro-cartagena-tQ14VN9aLPA-unsplash.jpg);
-    
     background-position: fixed;
     background-size: 100rem;
     height: max-content;
@@ -36,6 +39,11 @@
     height:0;
     max-height: 600px;
 }
+
+.iframe-map {
+    width: 400px;
+    height: 250px;
+}
     
 .map-responsive iframe {
     left:0;
@@ -43,6 +51,20 @@
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.mapouter {
+    position:relative;
+    text-align:right;
+    height:250px;
+    width:400px;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:250px;
+    width:400px;
 }
 
 /** Insérer les médias queries **/
@@ -62,6 +84,11 @@
     .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
+    }
+
+    .mapouter, .gmap_canvas {
+        width: 600px;
+        height: 450px;
     }
     
     .video-responsive {
@@ -85,6 +112,10 @@
         width: 80%;
         max-width: 1000px;
     }
+    .mapouter, .gmap_canvas {
+        width: 800px;
+        height: 650px;
+    }
     .video-responsive {
         width: 100vw;
         height: 30vh;
@@ -105,6 +136,10 @@
     .carousel, .img-responsive {
         width: 80%;
         max-width: 1000px;
+    }
+    .mapouter, .gmap_canvas {
+        width: 1000px;
+        height: 850px;
     }
     .video-responsive {
         width: 100vw;
