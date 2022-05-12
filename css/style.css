@@ -1,7 +1,13 @@
-/** insérer les fonts google **/
+/* font google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+
 
 * {
     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Flex', sans-serif;
 }
 
 .bg-perso {
@@ -67,9 +73,9 @@
     width:400px;
 }
 
-/** Insérer les médias queries **/
+/* médias queries */
 
-/** md **/ 
+/* md */
 @media screen and (min-width:768px) and (max-width:991px) {
     body, .btn {
         font-size: 18px;
@@ -97,7 +103,7 @@
     }
 }
 
-/** lg **/
+/* lg */
 @media screen and (min-width:992px) and (max-width:1199px){
     body, .btn {
         font-size: 19px;
@@ -122,7 +128,7 @@
     }
 }
 
-/** xl **/
+/* xl */
 @media screen and (min-width:1200px) {
     body, .btn {
         font-size: 20px;
